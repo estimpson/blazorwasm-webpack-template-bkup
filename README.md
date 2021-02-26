@@ -12,7 +12,7 @@ dotnet new blazorwasm
 npm init -y
 
 # install webpack and related utilities
-npm install --save-dev webpack webpack-cli css-loader style-loader postcss postcss-loader autoprefixer sass-loader node-sass typescript ts-loader prettier mini-css-extract-plugin
+npm install --save-dev nodemon webpack webpack-cli css-loader style-loader postcss postcss-loader autoprefixer sass-loader node-sass typescript ts-loader prettier mini-css-extract-plugin
 
 # install bootstrap
 npm install bootstrap @types/bootstrap jquery @types/jquery popper.js

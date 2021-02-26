@@ -15,7 +15,7 @@ npm init -y
 npm install --save-dev nodemon webpack webpack-cli css-loader style-loader postcss postcss-loader autoprefixer sass-loader node-sass typescript ts-loader prettier mini-css-extract-plugin
 
 # install bootstrap
-npm install bootstrap @types/bootstrap jquery @types/jquery popper.js
+npm install bootstrap@next @types/bootstrap jquery @types/jquery popper.js
 ```
 
 ## Webpack config

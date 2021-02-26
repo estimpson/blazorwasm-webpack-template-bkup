@@ -123,3 +123,43 @@ module.exports = {
     ]
 };
 ```
+
+## Client source files
+```shell
+mkdir src
+cd src
+```
+
+### Customize bootstrap
+**_custom.scss**
+```scss
+// Required
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+// Your variable overrides
+$body-bg: #000;
+$body-color: #111;
+
+// Bootstrap and its default variables
+
+// Optional
+@import "../node_modules/bootstrap/scss/root";
+@import "../node_modules/bootstrap/scss/reboot";
+@import "../node_modules/bootstrap/scss/type";
+// etc
+```
+
+**main.scss**
+```scss
+@import "custom";
+@import "bootstrap";
+```
+
+**index.ts**
+```ts
+import './main.scss';
+import { Tooltip, Toast, Popover } from "bootstrap";
+console.log('Hello World from your main file!');
+```
